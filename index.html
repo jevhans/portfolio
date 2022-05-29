@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Hello! I'm Jeff, a UX/UI designer based in Vancouver, Canada. Welcome to my portfolio!">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/index/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153728648-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-153728648-1');
+    </script>
+
+    <!-- Search Console Verification -->
+    <meta name="google-site-verification" content="W8hAXIRzQuQ3WdtxvBgIwy94uEJeio7YX7SU3tryDoE" />
+
+    <!--Icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- JS & JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+    <!-- Barba & GSAP -->
+    <script src="https://unpkg.com/@barba/core" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+
+    <title>portfolio by jevhans</title>
+</head>
+
+<body data-barba="wrapper">
+
+    <a class="skip-main" href="#main">Skip to main content</a>
+    
+    <div class="loader" style="background-color: #ebebeb"></div>
+
+    <div data-barba="container" data-barba-namespace="homepage">
+        <div id="master-homepage">
+            <header id="homepage">
+                <a href="index.html" tabindex="0"><img src="images/index/logo.jpg" alt="Line art of a smiling face" class="nav-logo timed-fadein"></a>
+
+                <nav>
+                    <ul id="nav-ul">
+                        <li class="nav-li"><a href="#" class="nav-link active" tabindex="1">Home</a></li>
+                        <li class="nav-li"><a href="/about/" class="nav-link" tabindex="2">About</a></li>
+                        <li class="nav-li"><a href="https://jevhans.com/" class="nav-link"
+                                target="_blank" tabindex="3">Photography</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="wide-container">
+                <section class="intro-container">
+                    <div class="intro-content">
+                        <div>
+                            <h1 class="primary reveal">Hello! I'm <a href="about/" class="intro-link" tabindex="4">Jeff</a>, a UX/UI designer.</h1>
+                        </div>
+
+                        <div>
+                            <p class="secondary reveal">My design philosophy is to create</p>
+                        </div>
+
+                        <div>
+                            <p class="secondary reveal">with conviction, thoughtfulness,</p>
+                        </div>
+
+                        <div>
+                            <p class="secondary reveal">and a dash of fun!✨</p>
+                        </div>
+
+                        <div>
+                            <p class="tertiary reveal"><span class="fas fa-location-dot" style="margin-right: 0.5rem;"></span>Vancouver, Canada</p>
+                        </div>
+                    </div>
+                </section>
+
+                <main id="main" tabindex="-1">
+                    <a id="portfolio"></a>
+                    <!--<h2 class="portfolio-intro timed-fadein">Explore</h1>-->
+
+                    <div class="portfolio-container timed-fadein">
+                        
+                        <div class="fadein">
+                            <section class="portfolio-block" tabindex="5">
+                                <a href="typology/">
+                                    <img src="images/index/typology.png" class="img-desktop" alt="Scattered assortment of typographic glyphs">
+                                    <img src="images/index/typology-scaled.png" class="img-mobile" alt="Scattered assortment of typographic glyphs">
+                                    <div id="portfolio-dark-text" class="portfolio-heading">
+                                        <h2>Typology</h2>
+                                        <p class="portfolio-hook">An all-in-one application for a designer's typography needs.</p>
+                                        <p class="tag-spacer"><span class="tag-dark">UX Design</span><span class="tag-dark">UI Design</span><span class="tag-dark">Branding</span></p>
+                                    </div>
+                                </a>
+                            </section>
+                        </div>
+
+                        <div class="fadein">
+                            <section class="portfolio-block" tabindex="6">
+                                <a href="snapshots/">
+                                    <img src="images/index/snapshots.png" class="img-desktop" alt="Laptop with a photo management system">
+                                    <img src="images/index/snapshots-scaled.png" class="img-mobile" alt="Laptop with a photo management system">
+                                    <div class="portfolio-heading">
+                                        <h2>Snapshots</h2>
+                                        <p class="portfolio-hook">A bulk photography organization and management system.</p>
+                                        <p class="tag-spacer"><span class="tag-light">UX Design</span><span class="tag-light">UI Design</span></p>
+                                    </div>
+                                </a>
+                            </section>
+                        </div>
+
+                        <div class="fadein">
+                            <section class="portfolio-block" tabindex="7">
+                                <a href="happyhour/">
+                                    <img src="images/index/happyhour.png" class="img-desktop" alt="Enamel pin of a happy face">
+                                    <img src="images/index/happyhour-scaled.png" class="img-mobile" alt="Enamel pin of a happy face">
+                                    <div class="portfolio-heading">
+                                        <h2>Happy Hour</h2>
+                                        <p class="portfolio-hook">A media alternative focusing on uplifting and positive news.</p>
+                                        <p class="tag-spacer"><span class="tag-light">UX Design</span><span class="tag-light">UI Design</span><span class="tag-light">Branding</span></p>
+                                    </div>
+                                </a>
+                            </section>
+                        </div>
+
+                        <div class="fadein">
+                            <section class="portfolio-block" tabindex="8">
+                                <a href="aerospace/">
+                                    <img src="images/index/aerospace.png" class="img-desktop" alt="Laptop with an outer space wallpaper theme">
+                                    <img src="images/index/aerospace-scaled.png" class="img-mobile" alt="Laptop with an outer space wallpaper theme">
+                                    <div class="portfolio-heading">
+                                        <h2>Aerospace</h2>
+                                        <p class="portfolio-hook">An visually immersive experience on space exploration and technology.</p>
+                                        <p class="tag-spacer"><span class="tag-light">UI Design</span></p>
+                                    </div>
+                                </a>
+                            </section>
+                        </div>
+
+                        <div class="fadein">
+                            <section class="portfolio-block" tabindex="9">
+                                <a href="tpac/">
+                                    <img src="images/index/tpac.png" class="img-desktop" alt="Line art of a building exterior">
+                                    <img src="images/index/tpac-scaled.png" class="img-mobile" alt="Line art of a building exterior">
+                                    <div id="portfolio-dark-text" class="portfolio-heading">
+                                        <h2>Taipei Performing Arts Center</h2>
+                                        <p class="portfolio-hook">A physical and digital exploration of NL Architects' Taipei Performing Arts Center.</p>
+                                        <p class="tag-spacer"><span class="tag-dark">Spatial Design</span><span class="tag-dark">3D Rendering</span></p>
+                                    </div>
+                                </a>
+                            </section>
+                        </div>
+                        
+                    </div>
+                </main>
+
+                <footer class="fadein">
+                    <div class="title-container">
+                        <div class="title-content">
+                            <p class="title">Oh, you're still here!</p>
+                            <p class="title">Feel free to reach out! ✌️</p>
+                            <div class="social-icons">
+                                <a href="https://linkedin.com/in/jevhans/" target="_blank" class="fa-brands fa-linkedin-in anchor-icon" tabindex="10"></a>
+                                <a href="mailto:jevhans@icloud.com" class="fa-solid fa-envelope anchor-icon" tabindex="11"></a>
+                            </div>
+                            <p class="notice-homepage">© Coded by Jeff, 2022.</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

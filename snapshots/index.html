@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Snapshots by Jevhans | Snapshots is a photo management software for amateur and professional photographers alike.">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../images/index/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153728648-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-153728648-1');
+    </script>
+
+    <!--Icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JS & JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="../js/main.js" defer></script>
+
+    <!-- Barba & GSAP -->
+    <script src="https://unpkg.com/@barba/core" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+
+    <title>snapshots by jevhans</title>
+</head>
+
+<body data-barba="wrapper">
+
+    <div class="loader" style="background-color: #ebebeb"></div>
+
+    <div data-barba="container" data-barba-namespace="snapshots">
+        <!-- <div class="loader"></div> -->
+        <div id="master-snapshots" class="portfolio-piece">
+            <header id="snapshots">
+                <nav>
+                    <ul id="nav-ul">
+                        <li class="nav-li"><a href="../index.html" class="nav-link">Home</a></li>
+                        <li class="nav-li"><a href="../about/" class="nav-link">About</a></li>
+                        <li class="nav-li"><a href="https://jevhans.com/" class="nav-link"
+                                target="_blank">Photography</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="heading">
+                    <h1 class="title">Snapshots</h1>
+                    <p class="tag-portfolio"><span class="tag-light">UX Design</span><span class="tag-light">UI Design</span></p>
+                </div>
+            </header>
+
+            <main>
+                <div class="writeup-container">
+                    <p class="hook">A photo management software specializing in bulk organization in post-processing for amateur and professional photographers alike.</p>
+                </div>
+
+                <figure>
+                    <img src="../images/snapshots/snapshots-app.jpg"
+                        alt="Laptop displaying the interface of a photography editing application.">
+                </figure>
+
+                <div class="writeup-container">
+                    <section class="overview">
+                        <h2>Skills</h2>
+                        <p>UX Design, UI Design</p>
+
+                        <h2>Tools</h2>
+                        <p>Figma, Photoshop, Lightroom</p>
+
+                        <h2>Scope</h2>
+                        <p>1-week, Individual</p>
+
+                        <h2>Bonus</h2>
+                        <p><a class="intext-link"
+                            href="../files/Jevhans-Snapshots.pdf" target="_blank">Final submission</a> <span
+                            class="subtitle-bold">(PDF, 6.71kB)</span>, <a class="intext-link" href="https://www.figma.com/proto/iXop2vKTM2lWZ5GQw26S4X/MDIA-2540---Snapshots?page-id=0%3A1&node-id=34%3A1702&viewport=241%2C48%2C0.25&scaling=contain&starting-point-node-id=34%3A1702" target="_blank">Interactive prototype</a> <span class="subtitle-bold">(Figma)</span></p>
+                    </section>
+                </div>
+
+                <section class="writeup-container">
+                    <h2>Overview</h2>
+                    <p>Snapshots is a photo management system created in response to the growing pains that are faced by amateur and professional photographers, who lack access to an appropriate means for meticulous organization.</p>
+                </section>
+
+                <section class="writeup-container">
+                    <h2>Context</h2>
+                    <p>Snapshots was a one-week long project for a UX/UI strategy course. <span class="highlight">The brief tested our individual ability to process and develop a solution by synthesizing user data, behaviors, and pain points that were provided to us</span>. This response was to be contextualized in a high-fidelity prototype that exemplified our solution.</p>
+                </section>
+
+                <section>
+                    <div class="writeup-container">
+                        <h2>Parsing data</h2>
+                        <h3>Meeting the muses</h3>
+                        <p>To begin addressing the issue, the first step was to parse through the data points that were
+                            issued from a user interview with photographers, Marlene and Jackson. The screencap below
+                            illustrates a small sample of the dataset, which reflects these individual's experiences
+                            related to photography. Together, <span class="highlight">Marlene and Jackson represent the two extremes of the photography spectrum respectively, one as a professional and the other an amateur</span>.</p>
+                    </div>
+
+                    <figure>
+                        <img src="../images/snapshots/interview-notes.png"
+                            alt="Spreadsheet of two columns depicting user data">
+                        <figcaption>Selection of interview notes from the photographers</figcaption>
+                    </figure>
+
+                    <div class="writeup-container">
+                        <p>To better format and address these responses, while also grouping each individual's
+                            experiences by their uniqueness and shared commonalities, <span class="highlight">I categorized their attributes using a venn diagram. This allowed me to visualize potential solutions for them individually, but also features that would be appreciated by them both, and even photographers not currently included</span>.</p>
+                    </div>
+
+                    <figure>
+                        <img src="../images/snapshots/venndiagram.png" alt="Venn diagram categorizing two sets of data">
+                        <figcaption>Venn diagram categorizing user data</figcaption>
+                    </figure>
+
+                    <div class="writeup-container">
+                        <h4>Marlene</h4>
+                        <p>Between the two interviewed users, Marlene's skillsets weigh towards the professional side of
+                            photography. Her kit encompasses a collection of lenses that she uses for different purposes.
+                            Her photoshoot preference is to compose and capture photos for their qualitative
+                            aspect, rather than quantative. <span class="highlight">We learn that her frustrations are mainly with the
+                            post-production process of sorting and organizing her work, as lengthy photoshoots can yield
+                            over hundreds of photos</span>. Thus, she would also appreciate the flexibility and customization for
+                            thematic categorization.</p>
+
+                        <h4>Jackson</h4>
+                        <p>On the other hand, Jackson is a happy-go-lucky kind of photographer – capturing anything and
+                            everything that brings him joy, so he can immortalize it in his photographic collection.
+                            As a result of this behavior, <span class="highlight">he finds himself needing the ability to organize and archive
+                            his photos, but can still retrieve it whenever.</span> Lastly, as Jackson finds that he photographs the most when he is on his travels, he would benefit from a cloud-based and multi-platform app.
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="writeup-container">
+                        <h2>Brainstorming</h2>
+                        <h3>Framing the problem</h3>
+                        <p><span class="highlight">Both Marlene and Jackson desire a photo management system that allows them high control and autonomy in managing photo categorization and metadata, but lack the tools to do so in a readily accessible manner</span>.</p>
+                    </div>
+
+                    <div class="writeup-container">
+                        <h3>Opportunities in view</h3>
+                        <p>Between Marlene and Jackson, <span class="highlight">there were several shared solutions that could be implemented to bridge their needs</span>. Below were my takeaways for what design decisions I could make to tailor to make a viable product.</p>
+                        <ol>
+                            <li><strong>Access and view metadata</strong> with the ability to categorize by and edit details of themes, size, color, people, and more.</li>
+                            <li><strong>Emphasize a facet system </strong> when searching for photos to utilize the default or customized metadata associated with them.</li>
+                            <li><strong>Showcase previous work</strong> so that they're not forgotten once they've been uploaded.</li>
+                        </ol>
+                    </div>
+ 
+                    <div class="writeup-container">
+                        <h3>Snaps of inspiration</h3>
+                        <p>Due to this project's slim timeline, the brief only required a high-fidelity prototype in the
+                            end. However, to get a better sense of what the current states and standards are for photo
+                            management apps, I personally looked to Apple's desktop iOS photo app for inspiration, in
+                            addition to trends that were prevalent on sites like Dribbble and Pinterest.</p>
+                            
+                        <p><span class="highlight">I focused on finding design inspirations that were more function-based over form</span>, as this would not have been a realistic project to be tinkering with overly flashy or excessive visuals due to the tight deadline. Moreover, although I was creating a photo app, <span class="highlight">I also looked at dashboard designs, as I feel they provide overview to data in a readily-sighted method, which is what Marlene and Jackson hope to have</span>.</p>
+                    </div>
+
+                    <figure>
+                        <img src="../images/snapshots/brainstorm.jpg" alt="Moodboard of photo management interfaces">
+                        <figcaption>Collection of photo management interfaces</figcaption>
+                    </figure>
+                </section>
+
+                <section>
+                    <div class="writeup-container">
+                        <h2>Prototype</h2>
+                        <h3>Celebrate with your best shots</h3>
+                        <p>Below are a series of four screens that create Snapshots. <span class="highlight">The idea
+                            of this management software is to provide photo enthusiasts the flexibility of customizing
+                            their visual works through a number of cataloguing techniques, ranging from smart uploads
+                            that flag duplicates and out-of-focus compositions, to facet-browsing, and tagging systems</span>.
+                            Snapshots aims to support the organizational and archival needs of photography creatives.</p>
+                    </div>
+
+                    <div class="writeup-container">
+                        <h3>Homepage</h3>
+                        <p>When the app is first booted up, users will be welcomed to the homepage. It displays a selection of all their recent activity, including memories from the past and highlights from their friends. Let's break it down below!</p>
+                    </div>
+
+                    <figure class="fig-annotated">
+                        <img src="../images/snapshots/home.png"
+                            alt="Photo management app displaying series of photographs by section">
+                        <figcaption>Homepage</figcaption>
+                    </figure>
+
+                    <div class="writeup-container">
+                        <ol class="bubbles-ol">
+                            <li>The search function can filter for characteristics such as tags, colors, names of people, and geographical locations, providing users flexibility for their search results.</li>
+                            <li>While neither Marlene or Jackson mentioned legibility and scalability as an issue, users can scale in and out of the page. This implementation was important for accessibility, especially if Snapshots may potentially cater to an older demographic based on the two existing prospective users. There are also toggles for gallery and list view. For someone like Marlene, this integrates for support for bulk editing medatadata.</li>
+                            <li>This sidebar includes options for photo-cataloguing and an upload button. These are accessible from every page to ensure efficient navigation.</li>
+                            <li>The "From this day" collection spotlights previous photographs that have been uploaded, a feature designed specifically for Jackson and his love for memory lane.</li>
+                            <li>As both Marlene and Jackson had tendencies to share photos with those in their circle, I also included a "From your friends" section to help them foster that socialization.</li>
+                            <li>A subtle gradient has also been applied to the right edge of the row, indicating to users that more content exists beyond.</li>
+                        </ol>
+                    </div>
+
+                    <div class="writeup-container">
+                        <h3>The Library</h3>
+                        <p>When photos have been uploaded, they will be populated by default into the Library tab.</p>
+
+                        <p><span class="highlight"><strong>Sad fact:</strong> Although the dates say 2019 and the photos <em>were</em> taken back then, this project was designed in 2021</span>. Being morally responsible, I didn't want to put 2021 and have people think I was running around without a mask - but also, I really just didn't take enough photos during a global pandemic to make an album out of it 😢</p>
+                    </div>
+
+                    <figure class="fig-annotated">
+                        <img src="../images/snapshots/library.png"
+                            alt="Photo management app displaying series of photographs by section">
+                        <figcaption>Library</figcaption>
+                    </figure>
+
+                    <div class="writeup-container">
+                        <ol class="bubbles-ol">
+                            <li>The categories at the top of a photoset offer different scales of time to help users pick the sort order of their photos.</li>
+                            <li>Each photoset will display the first six. Any photos that are not displayed will be denoted by the number to the last set of the series. Clicking on the last photo will simply expand the content to reveal everything else.</li>
+                            <li>Users can also access an editor to make basic modifications like color grading. Jackson noted that he often rotates his photos, but has to use a separate app as his photo management app lacks this functionality. In contrast, Marlene prefers to keep her photos unedited. The feature was added as the usability and benefit far outweigh not including one, but it is not made central to the experience so as not to dilute the photo management focus with a photo editor.</li>
+                            <li>Selected photos will display the metadata and detail that belong to it. Users can also rate their photo, add tags, and change the colors associated. These optional and automatic features can help users refine their search in the future.</li>
+                        </ol>
+                    </div>
+
+                    <div class="writeup-container">
+                        <h3>Upload</h3>
+                        <p>The upload screen is accessible through the upload button found in the sidebar. <span class="highlight">Clicking on it will trigger an overlay, where users can drag and drop their photos to begin uploading</span>.</p>
+                    </div>
+
+                    <figure class="fig-annotated">
+                        <img src="../images/snapshots/upload.png" alt="Pop-up with customizable options for photo uploads">
+                        <figcaption>Upload</figcaption>
+                    </figure>
+
+                    <div class="writeup-container">
+                        <ol class="bubbles-ol">
+                            <li>Included here are options for smart uploading, which include flagging duplicate and out-of-focus shots, on top of categorizing photos by subject and color. These features were largely
+                            targeted to Marlene, due to the exhaustively long times she spends in post-production filtering for deliberation-worthy photos. These functionalities would be powered by machine learning and AI to determine how best to sort and categorize the photos.</li>
+                            <li>An option for naming convention was incorporated for Jackson as he wanted the ability to control photo names and extensions by the bulk.</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="writeup-container">
+                    <h2>Reflections</h2>
+                    <h3>Cataloguing my experience</h3>
+                    <p>With a one-week deadline, there were limitations put in place for how large of a scope this
+                        project could cover. <span class="highlight">As such, if you've played with the prototype, you'll notice that there were features mentioned and shown, but were not actually implemented and fleshed out</span>. For example, the true social functionalities behind the "From your friends" category on the homepage, the photo editor's interface and features,
+                        or the outcome and actual logic behind smart uploads.</p>
+
+                    <p>Although it is easy to dream of all the perfect features, thoughtful prototyping does require time.
+                        Either way, <span class="highlight">the exercise was a test to our response and how we justify and design user-centric, which in this case, I feel that I've done a successful job implementing a happy medium between Marlene and Jackson</span>.</p>
+                </section>
+
+                <section>
+                    <div class="writeup-container">
+                        <h3>The second take</h3>
+                        <p>Design is never finished, and this is no exception. There are still quite a lot of areas to explore for Snapshots, so here are some of my thoughts:</p>
+                        <ol>
+                            <li><strong>Finding opportunities for photographers inbetween</strong> the skills of Marlene and Jackson. I tried consciously to design outward beyond the two established users, but I'd be curious to explore what other photographer styles exist between them.</li>
+                            <li><strong>Implementing the told-but-not-shown</strong> features that were not prototyped to create a more conclusive experience in Snapshots.</li>
+                            <li><strong>Designing a mobile-version</strong> as a cloud-based and portable app, which was a wishlist item of Jackson's, but was out of scope for the project brief.</li>
+                        </ol>
+
+                        <p>View and download the <a class="intext-link"
+                            href="../files/Jevhans-Snapshots.pdf" target="_blank">Snapshots presentation</a> <span
+                            class="subtitle-bold">(PDF, 6.71kB)</span>, and play with the <a class="intext-link" href="https://www.figma.com/proto/iXop2vKTM2lWZ5GQw26S4X/MDIA-2540---Snapshots?page-id=0%3A1&node-id=34%3A1702&viewport=241%2C48%2C0.25&scaling=contain&starting-point-node-id=34%3A1702" target="_blank">interactive prototype</a> <span class="subtitle-bold">(Figma)</span>.
+                    </p>
+                    </div>
+                </section>
+            </main>
+
+            <div class="fullwidth-container">
+                <a href="#master-snapshots" id="return-arrow" class="return-to-top fa fa-chevron-up"></a>
+            </div>
+
+            <footer>
+                <div class="heading">
+                    <p class="subtitle">Up next &#10230;</p>
+                    <a href="../happyhour/" class="footer-hover">
+                        <h1 class="title footer-text">Happy Hour</h1>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
