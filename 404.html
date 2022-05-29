@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Hello! I'm Jeff, a UX/UI designer based in Vancouver, Canada. Welcome to my portfolio!">
+    <meta http-equiv="refresh" content="10; url=https://jevhans.ca/">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/index/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153728648-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-153728648-1');
+    </script>
+
+    <!--Icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JS & JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+    <!-- Barba & GSAP -->
+    <script src="https://unpkg.com/@barba/core" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+
+    <title>portfolio by jevhans</title>
+</head>
+
+<body data-barba="wrapper">
+    
+    <div class="loader" style="background-color: #ebebeb"></div>
+
+    <div data-barba="container" data-barba-namespace="404">
+        <div id="master-404">
+            <div class="wide-container">
+                <div class="container-404">
+                    <img src="images/404/faces.gif" alt="Illustrated faces" class="logo-404">
+
+                    <h1 class="title nospace">Erm, did I misplace a page?</h1>
+                    <p>You're quite the adventurer, but let's get you back to <a href="https://jevhans.ca/" class="intext-link">jevhans.ca</a>!</p>
+
+                    <p class="nospace-top">Redirecting in <span id="seconds">10</span>...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Redirect countdown -->
+    <script>
+        var time = 10;
+        var redirectTimer = setInterval(function(){
+        time--;
+        document.getElementById("seconds").textContent = time;
+        if(time <= 0)
+            clearInterval(redirectTimer);
+        },1000);
+    </script>
+</body>
+
+</html>
